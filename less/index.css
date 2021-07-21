@@ -1,0 +1,511 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+html body .title {
+  color: #fff;
+  padding-left: 30px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+html body .clear {
+  overflow: hidden;
+  padding: 30px;
+}
+html body .clear .sinBlock {
+  float: left;
+  margin-right: 150px;
+  margin-bottom: 150px;
+}
+html body .clear .sinBlock .demo {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.demo1_1 {
+  position: relative;
+}
+.demo1_1::before,
+.demo1_1::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #9DADF0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.demo1_1::before {
+  top: 0;
+}
+.demo1_1::after {
+  bottom: 0;
+}
+.demo1_1:hover::before {
+  width: 100%;
+}
+.demo1_1:hover::after {
+  width: 100%;
+}
+.demo1_2 {
+  position: relative;
+}
+.demo1_2::before,
+.demo1_2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 0;
+  background: #9DADF0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.demo1_2::before {
+  left: 0;
+}
+.demo1_2::after {
+  right: 0;
+}
+.demo1_2:hover::before {
+  height: 100%;
+}
+.demo1_2:hover::after {
+  height: 100%;
+}
+.demo1_3 {
+  position: relative;
+}
+.demo1_3::before,
+.demo1_3::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #9DADF0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.demo1_3::before {
+  left: 0;
+  top: 0;
+}
+.demo1_3::after {
+  right: 0;
+  bottom: 0;
+}
+.demo1_3:hover::before {
+  width: 100%;
+}
+.demo1_3:hover::after {
+  width: 100%;
+}
+.demo1_4 {
+  position: relative;
+}
+.demo1_4::before,
+.demo1_4::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background: #9DADF0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.demo1_4::before {
+  left: 0;
+  top: 0;
+}
+.demo1_4::after {
+  right: 0;
+  bottom: 0;
+}
+.demo1_4:hover::before {
+  height: 100%;
+}
+.demo1_4:hover::after {
+  height: 100%;
+}
+.demo1_5 {
+  position: relative;
+}
+.demo1_5 .leftTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.demo1_5 .leftTop::before,
+.demo1_5 .leftTop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #9DADF0;
+}
+.demo1_5 .leftTop::before {
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.demo1_5 .leftTop::after {
+  width: 2px;
+  height: 0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.demo1_5 .rightBottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.demo1_5 .rightBottom::before,
+.demo1_5 .rightBottom::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #9DADF0;
+}
+.demo1_5 .rightBottom::before {
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.demo1_5 .rightBottom::after {
+  width: 2px;
+  height: 0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.demo1_5:hover .leftTop::before {
+  width: 100%;
+}
+.demo1_5:hover .leftTop::after {
+  height: 100%;
+}
+.demo1_5:hover .rightBottom::before {
+  width: 100%;
+}
+.demo1_5:hover .rightBottom::after {
+  height: 100%;
+}
+.demo1_6 {
+  position: relative;
+}
+.demo1_6 .leftTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.demo1_6 .leftTop::before,
+.demo1_6 .leftTop::after {
+  content: "";
+  position: absolute;
+  background: #9DADF0;
+}
+.demo1_6 .leftTop::before {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.demo1_6 .leftTop::after {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.demo1_6 .rightBottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.demo1_6 .rightBottom::before,
+.demo1_6 .rightBottom::after {
+  content: "";
+  position: absolute;
+  background: #9DADF0;
+}
+.demo1_6 .rightBottom::before {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.demo1_6 .rightBottom::after {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.demo1_6:hover .leftTop::before {
+  width: 100%;
+}
+.demo1_6:hover .leftTop::after {
+  height: 100%;
+}
+.demo1_6:hover .rightBottom::before {
+  width: 100%;
+}
+.demo1_6:hover .rightBottom::after {
+  height: 100%;
+}
+.demo2_1 {
+  position: relative;
+  overflow: hidden;
+}
+.demo2_1 .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.demo2_1 .mask1,
+.demo2_1 .mask2 {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 142, 193, 0.5);
+}
+.demo2_1 .mask1 {
+  -webkit-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+.demo2_1 .mask2 {
+  -webkit-transition: left 0.8s ease-in-out;
+  transition: left 0.8s ease-in-out;
+}
+.demo2_1:hover .mask1 {
+  left: 0;
+}
+.demo2_1:hover .mask2 {
+  left: 0;
+}
+.demo2_2 {
+  position: relative;
+  overflow: hidden;
+}
+.demo2_2 .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.demo2_2 .mask1,
+.demo2_2 .mask2 {
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  width: 50px;
+  height: 150px;
+  background: rgba(128, 142, 193, 0.5);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+.demo2_2 .mask1 {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.demo2_2 .mask2 {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+}
+.demo2_2:hover .mask1 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.demo2_2:hover .mask2 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.demo2_3 {
+  position: relative;
+  overflow: hidden;
+}
+.demo2_3 .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.demo2_3 .mask1,
+.demo2_3 .mask2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(128, 142, 193, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.demo2_3 .mask1 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.demo2_3 .mask2 {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.demo2_3:hover .mask1 {
+  width: 150px;
+  height: 150px;
+}
+.demo2_3:hover .mask2 {
+  width: 150px;
+  height: 150px;
+}
+.demo2_4 {
+  position: relative;
+  overflow: hidden;
+}
+.demo2_4 .text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.demo2_4 .mask1,
+.demo2_4 .mask2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+.demo2_4 .mask1 {
+  left: 0;
+  top: -100%;
+}
+.demo2_4 .mask1::before,
+.demo2_4 .mask1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background: rgba(128, 142, 193, 0.5);
+}
+.demo2_4 .mask1::before {
+  left: 0;
+}
+.demo2_4 .mask1::after {
+  left: 50%;
+}
+.demo2_4 .mask2 {
+  left: 0;
+  top: 100%;
+}
+.demo2_4 .mask2::before,
+.demo2_4 .mask2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background: rgba(128, 142, 193, 0.5);
+}
+.demo2_4 .mask2::before {
+  left: 25%;
+}
+.demo2_4 .mask2::after {
+  left: 75%;
+}
+.demo2_4:hover .mask1 {
+  top: 0;
+}
+.demo2_4:hover .mask2 {
+  top: 0;
+}
+.demo3_1 {
+  position: relative;
+}
+.demo3_1::before {
+  content: "向上切换";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.demo3_1::after {
+  content: "向上切换";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.demo3_1:hover::before {
+  top: 0;
+  opacity: 1;
+}
+.demo3_1:hover::after {
+  top: -20px;
+  opacity: 0;
+}
